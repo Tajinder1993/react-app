@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import JobDetail from "../JobDetail/JobDetail";
 function JobList() {
   return (
     <>
@@ -11,10 +13,10 @@ function JobList() {
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb text-uppercase">
                 <li className="breadcrumb-item">
-                  <a href="index.html">Home</a>
+                  <Link to={"/"}>Home</Link>
                 </li>
                 <li className="breadcrumb-item">
-                  <a href="category.html">Job Category</a>
+                  <Link to={"/Category"}>Job Category</Link>
                 </li>
                 <li
                   className="breadcrumb-item text-white active"
@@ -26,7 +28,6 @@ function JobList() {
             </nav>
           </div>
         </div>
-        {/* Header End  */}
 
         {/* Jobs Start  */}
         <div className="container-xxl py-5">
@@ -40,34 +41,34 @@ function JobList() {
             >
               <ul className="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
                 <li className="nav-item">
-                  <a
+                  <Link
                     className="d-flex align-items-center text-start mx-3 ms-0 pb-3 active"
                     data-bs-toggle="pill"
-                    href="#tab-1"
+                    to={"#tab-1"}
                   >
                     <h6 className="mt-n1 mb-0">Featured</h6>
-                  </a>
+                  </Link>
                 </li>
                 {/* Full time job  */}
                 <li className="nav-item">
-                  <a
+                  <Link
                     className="d-flex align-items-center text-start mx-3 pb-3"
                     data-bs-toggle="pill"
-                    href="#tab-2"
+                    to={"#tab-2"}
                   >
                     <h6 className="mt-n1 mb-0">Full Time</h6>
-                  </a>
+                  </Link>
                 </li>
 
                 {/* Part Time  */}
                 <li className="nav-item">
-                  <a
+                  <Link
                     className="d-flex align-items-center text-start mx-3 me-0 pb-3"
                     data-bs-toggle="pill"
-                    href="#tab-3"
+                    to={"#tab-3"}
                   >
                     <h6 className="mt-n1 mb-0">Part Time</h6>
-                  </a>
+                  </Link>
                 </li>
               </ul>
 
@@ -103,12 +104,15 @@ function JobList() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="job-detail.html">
+                          </Link>
+                          <Link className="btn btn-primary" to={"/JobDetail"}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -147,12 +151,15 @@ function JobList() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="job-detail.html">
+                          </Link>
+                          <Link className="btn btn-primary" to={"/JobDetail"}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -190,12 +197,15 @@ function JobList() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="job-detail.html">
+                          </Link>
+                          <Link className="btn btn-primary" to={"/JobDetail"}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -233,12 +243,15 @@ function JobList() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="job-detail.html">
+                          </Link>
+                          <Link className="btn btn-primary" to={"/JobDetail"}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -277,12 +290,15 @@ function JobList() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="job-detail.html">
+                          </Link>
+                          <Link className="btn btn-primary" to={"/JobDetail"}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -291,9 +307,9 @@ function JobList() {
                       </div>
                     </div>
                   </div>
-                  <a className="btn btn-primary py-3 px-5" href="">
+                  <Link className="btn btn-primary py-3 px-5" to="">
                     Browse More Jobs
-                  </a>
+                  </Link>
                 </div>
 
                 {/* Software Engineer for Full Time   */}
@@ -325,12 +341,15 @@ function JobList() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="job-detail.html">
+                          </Link>
+                          <Link className="btn btn-primary" to={"/JobDetail"}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -368,12 +387,15 @@ function JobList() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="job-detail.html">
+                          </Link>
+                          <Link className="btn btn-primary" to={"/JobDetail"}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -411,12 +433,15 @@ function JobList() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="job-detail.html">
+                          </Link>
+                          <Link className="btn btn-primary" to={"/JobDetail"}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -454,12 +479,15 @@ function JobList() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="job-detail.html">
+                          </Link>
+                          <Link className="btn btn-primary" to={"/JobDetail"}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -497,12 +525,15 @@ function JobList() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="job-detail.html">
+                          </Link>
+                          <Link className="btn btn-primary" to={"/JobDetail"}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -511,9 +542,9 @@ function JobList() {
                       </div>
                     </div>
                   </div>
-                  <a className="btn btn-primary py-3 px-5" href="">
+                  <Link className="btn btn-primary py-3 px-5" to="">
                     Browse More Jobs
-                  </a>
+                  </Link>
                 </div>
 
                 <div id="tab-3" className="tab-pane fade show p-0">
@@ -545,12 +576,15 @@ function JobList() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="job-detail.html">
+                          </Link>
+                          <Link className="btn btn-primary" to={"/JobDetail"}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -588,12 +622,15 @@ function JobList() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="job-detail.html">
+                          </Link>
+                          <Link className="btn btn-primary" to={"/JobDetail"}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -631,12 +668,15 @@ function JobList() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="job-detail.html">
+                          </Link>
+                          <Link className="btn btn-primary" to="/JobDetail">
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -674,12 +714,15 @@ function JobList() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="job-detail.html">
+                          </Link>
+                          <Link className="btn btn-primary" to={"/JobDetail"}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -717,12 +760,15 @@ function JobList() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="job-detail.html">
+                          </Link>
+                          <Link className="btn btn-primary" to={"/JobDetail"}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -731,9 +777,9 @@ function JobList() {
                       </div>
                     </div>
                   </div>
-                  <a className="btn btn-primary py-3 px-5" href="">
+                  <Link className="btn btn-primary py-3 px-5" to={""}>
                     Browse More Jobs
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

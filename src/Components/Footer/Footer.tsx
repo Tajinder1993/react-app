@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <>
@@ -12,39 +13,39 @@ function Footer() {
             <div className="row g-5">
               <div className="col-lg-3 col-md-6">
                 <h5 className="text-white mb-4">Company</h5>
-                <a className="btn btn-link text-white-50" href="">
+                <Link className="btn btn-link text-white-50" to={""}>
                   About Us
-                </a>
-                <a className="btn btn-link text-white-50" href="">
+                </Link>
+                <Link className="btn btn-link text-white-50" to={"/Contact"}>
                   Contact Us
-                </a>
-                <a className="btn btn-link text-white-50" href="">
+                </Link>
+                <Link className="btn btn-link text-white-50" to={""}>
                   Our Services
-                </a>
-                <a className="btn btn-link text-white-50" href="">
+                </Link>
+                <Link className="btn btn-link text-white-50" to={""}>
                   Privacy Policy
-                </a>
-                <a className="btn btn-link text-white-50" href="">
+                </Link>
+                <Link className="btn btn-link text-white-50" to={""}>
                   Terms & Condition
-                </a>
+                </Link>
               </div>
               <div className="col-lg-3 col-md-6">
                 <h5 className="text-white mb-4">Quick Links</h5>
-                <a className="btn btn-link text-white-50" href="">
+                <Link className="btn btn-link text-white-50" to={""}>
                   About Us
-                </a>
-                <a className="btn btn-link text-white-50" href="">
+                </Link>
+                <Link className="btn btn-link text-white-50" to={"/Contact"}>
                   Contact Us
-                </a>
-                <a className="btn btn-link text-white-50" href="">
+                </Link>
+                <Link className="btn btn-link text-white-50" to={""}>
                   Our Services
-                </a>
-                <a className="btn btn-link text-white-50" href="">
+                </Link>
+                <Link className="btn btn-link text-white-50" to={""}>
                   Privacy Policy
-                </a>
-                <a className="btn btn-link text-white-50" href="">
+                </Link>
+                <Link className="btn btn-link text-white-50" to={""}>
                   Terms & Condition
-                </a>
+                </Link>
               </div>
               <div className="col-lg-3 col-md-6">
                 <h5 className="text-white mb-4">Contact</h5>
@@ -59,18 +60,18 @@ function Footer() {
                   <i className="fa fa-envelope me-3"></i>info@example.com
                 </p>
                 <div className="d-flex pt-2">
-                  <a className="btn btn-outline-light btn-social" href="">
+                  <Link className="btn btn-outline-light btn-social" to={""}>
                     <i className="fab fa-twitter"></i>
-                  </a>
-                  <a className="btn btn-outline-light btn-social" href="">
+                  </Link>
+                  <Link className="btn btn-outline-light btn-social" to={""}>
                     <i className="fab fa-facebook-f"></i>
-                  </a>
-                  <a className="btn btn-outline-light btn-social" href="">
+                  </Link>
+                  <Link className="btn btn-outline-light btn-social" to={""}>
                     <i className="fab fa-youtube"></i>
-                  </a>
-                  <a className="btn btn-outline-light btn-social" href="">
+                  </Link>
+                  <Link className="btn btn-outline-light btn-social" to={""}>
                     <i className="fab fa-linkedin-in"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-lg-3 col-md-6">
@@ -87,6 +88,7 @@ function Footer() {
                   />
                   <button
                     type="button"
+                    onClick={() => (window.location.href = "/SignUp")}
                     className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
                   >
                     SignUp
@@ -100,9 +102,9 @@ function Footer() {
               <div className="row">
                 <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
                   &copy;{" "}
-                  <a className="border-bottom" href="#">
+                  <Link className="border-bottom" to={""}>
                     JObEntry
-                  </a>
+                  </Link>
                   , All Right Reserved.
                 </div>
               </div>

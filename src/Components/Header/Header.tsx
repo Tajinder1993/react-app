@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 function Header() {
   return (
     <>
@@ -20,12 +21,12 @@ function Header() {
 
         {/* Navbar Start */}
         <nav className="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-          <a
-            href="index.html"
+          <Link
+            to={"/"}
             className="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5"
           >
             <h1 className="m-0 text-primary">JobEntry</h1>
-          </a>
+          </Link>
           <button
             type="button"
             className="navbar-toggler me-4"
@@ -36,29 +37,29 @@ function Header() {
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto p-4 p-lg-0">
-              <a href="index.html" className="nav-item nav-link active">
+              <Link to={"/"} className="nav-item nav-link active">
                 Home
-              </a>
+              </Link>
 
-              <a href="job-list.html" className="nav-item nav-link">
+              <Link to={"/JobList"} className="nav-item nav-link">
                 Find Jobs
-              </a>
+              </Link>
 
-              <a href="company-list.html" className="nav-item nav-link active">
+              <Link to={"/CompanyList"} className="nav-item nav-link active">
                 Employers
-              </a>
+              </Link>
 
-              <a href="contact.html" className="nav-item nav-link">
+              <Link to={"/Contact"} className="nav-item nav-link">
                 Contact
-              </a>
+              </Link>
 
-              <a href="login.html" className="nav-item nav-link">
+              <Link to={"/Login"} className="nav-item nav-link">
                 Login
-              </a>
+              </Link>
 
-              <a href="signup.html" className="nav-item nav-link">
+              <Link to={"/SignUp"} className="nav-item nav-link">
                 Sign Up
-              </a>
+              </Link>
             </div>
           </div>
         </nav>

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function CompanyList() {
   return (
     <>
@@ -10,10 +12,10 @@ function CompanyList() {
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb text-uppercase">
                 <li className="breadcrumb-item">
-                  <a href="#">Home</a>
+                  <Link to={"/"}>Home</Link>
                 </li>
                 <li className="breadcrumb-item">
-                  <a href="#">Pages</a>
+                  <Link to={"/"}>Pages</Link>
                 </li>
                 <li
                   className="breadcrumb-item text-white active"
@@ -316,159 +318,159 @@ function CompanyList() {
                     className="col-lg-3 col-sm-6 wow fadeInUp"
                     data-wow-delay="0.1s"
                   >
-                    <a
+                    <Link
                       className="cat-item rounded p-4"
-                      href="company-detail.html"
+                      to={"/CompanyDetail"}
                     >
                       <img src="/img/hilton.gif" className="d-block m-auto" />
                       <h6 className="mb-3 text-center">Hilton Hotels</h6>
                       <p className="mb-0 text-center">20 Vacancy</p>
-                    </a>
+                    </Link>
                   </div>
                   <div
                     className="col-lg-3 col-sm-6 wow fadeInUp"
                     data-wow-delay="0.3s"
                   >
-                    <a
+                    <Link
                       className="cat-item rounded p-4"
-                      href="company-detail.html"
+                      to={"/CompanyDetail"}
                     >
                       <img src="/img/zeta.gif" className="d-block m-auto" />
                       <h6 className="mb-3">Zeta Global</h6>
                       <p className="mb-0">13 Vacancy</p>
-                    </a>
+                    </Link>
                   </div>
                   <div
                     className="col-lg-3 col-sm-6 wow fadeInUp"
                     data-wow-delay="0.5s"
                   >
-                    <a
+                    <Link
                       className="cat-item rounded p-4"
-                      href="company-detail.html"
+                      to={"/CompanyDetail"}
                     >
                       <img src="/img/kgk.gif" />
                       <h6 className="mb-3">KGK Group</h6>
                       <p className="mb-0">23 Vacancy</p>
-                    </a>
+                    </Link>
                   </div>
                   <div
                     className="col-lg-3 col-sm-6 wow fadeInUp"
                     data-wow-delay="0.7s"
                   >
-                    <a
+                    <Link
                       className="cat-item rounded p-4"
-                      href="company-detail.html"
+                      to={"/CompanyDetail"}
                     >
                       <img src="/img/aspirent.gif" />
                       <h6 className="mb-3">Spirent Communications</h6>
                       <p className="mb-0">12 Vacancy</p>
-                    </a>
+                    </Link>
                   </div>
 
                   <div
                     className="col-lg-3 col-sm-6 wow fadeInUp"
                     data-wow-delay="0.1s"
                   >
-                    <a
+                    <Link
                       className="cat-item rounded p-4"
-                      href="company-detail.html"
+                      to={"/CompanyDetail"}
                     >
                       <img src="/img/hilton.gif" className="d-block m-auto" />
                       <h6 className="mb-3 text-center">Hilton Hotels</h6>
                       <p className="mb-0 text-center">13 Vacancy</p>
-                    </a>
+                    </Link>
                   </div>
                   <div
                     className="col-lg-3 col-sm-6 wow fadeInUp"
                     data-wow-delay="0.3s"
                   >
-                    <a
+                    <Link
                       className="cat-item rounded p-4"
-                      href="company-detail.html"
+                      to={"/CompanyDetail"}
                     >
                       <img src="/img/zeta.gif" className="d-block m-auto" />
                       <h6 className="mb-3">Zeta Global</h6>
                       <p className="mb-0">12 Vacancy</p>
-                    </a>
+                    </Link>
                   </div>
                   <div
                     className="col-lg-3 col-sm-6 wow fadeInUp"
                     data-wow-delay="0.5s"
                   >
-                    <a
+                    <Link
                       className="cat-item rounded p-4"
-                      href="company-detail.html"
+                      to={"/CompanyDetail"}
                     >
                       <img src="/img/kgk.gif" />
                       <h6 className="mb-3">KGK Group</h6>
                       <p className="mb-0">23 Vacancy</p>
-                    </a>
+                    </Link>
                   </div>
                   <div
                     className="col-lg-3 col-sm-6 wow fadeInUp"
                     data-wow-delay="0.7s"
                   >
-                    <a
+                    <Link
                       className="cat-item rounded p-4"
-                      href="company-detail.html"
+                      to={"/CompanyDetail"}
                     >
                       <img src="/img/aspirent.gif" />
                       <h6 className="mb-3">Spirent Communications</h6>
                       <p className="mb-0">13 Vacancy</p>
-                    </a>
+                    </Link>
                   </div>
 
                   <div
                     className="col-lg-3 col-sm-6 wow fadeInUp"
                     data-wow-delay="0.1s"
                   >
-                    <a
+                    <Link
                       className="cat-item rounded p-4"
-                      href="company-detail.html"
+                      to={"/CompanyDetail"}
                     >
                       <img src="/img/hilton.gif" className="d-block m-auto" />
                       <h6 className="mb-3 text-center">Hilton Hotels</h6>
                       <p className="mb-0 text-center">12 Vacancy</p>
-                    </a>
+                    </Link>
                   </div>
                   <div
                     className="col-lg-3 col-sm-6 wow fadeInUp"
                     data-wow-delay="0.3s"
                   >
-                    <a
+                    <Link
                       className="cat-item rounded p-4"
-                      href="company-detail.html"
+                      to={"/CompanyDetail"}
                     >
                       <img src="/img/zeta.gif" className="d-block m-auto" />
                       <h6 className="mb-3">Zeta Global</h6>
                       <p className="mb-0">23 Vacancy</p>
-                    </a>
+                    </Link>
                   </div>
                   <div
                     className="col-lg-3 col-sm-6 wow fadeInUp"
                     data-wow-delay="0.5s"
                   >
-                    <a
+                    <Link
                       className="cat-item rounded p-4"
-                      href="company-detail.html"
+                      to={"/CompanyDetail"}
                     >
                       <img src="/img/kgk.gif" />
                       <h6 className="mb-3">KGK Group</h6>
                       <p className="mb-0">13 Vacancy</p>
-                    </a>
+                    </Link>
                   </div>
                   <div
                     className="col-lg-3 col-sm-6 wow fadeInUp"
                     data-wow-delay="0.7s"
                   >
-                    <a
+                    <Link
                       className="cat-item rounded p-4"
-                      href="company-detail.html"
+                      to={"/CompanyDetail"}
                     >
                       <img src="/img/aspirent.gif" />
                       <h6 className="mb-3">Spirent Communications</h6>
                       <p className="mb-0">12 Vacancy</p>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

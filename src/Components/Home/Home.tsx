@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <>
@@ -18,18 +20,18 @@ function Home() {
                         Find The Perfect Job That You Deserved
                       </h1>
 
-                      <a
-                        href=""
+                      <Link
+                        to={""}
                         className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
                       >
                         Search A Job
-                      </a>
-                      <a
-                        href=""
+                      </Link>
+                      <Link
+                        to={""}
                         className="btn btn-secondary py-md-3 px-md-5 animated slideInRight"
                       >
                         Find A Talent
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -50,81 +52,81 @@ function Home() {
                 className="col-lg-3 col-sm-6 wow fadeInUp"
                 data-wow-delay="0.1s"
               >
-                <a className="cat-item rounded p-4" href="">
+                <Link className="cat-item rounded p-4" to={""}>
                   <i className="fa fa-3x fa-mail-bulk text-primary mb-4"></i>
                   <h6 className="mb-3">Marketing</h6>
                   <p className="mb-0">123 Vacancy</p>
-                </a>
+                </Link>
               </div>
               <div
                 className="col-lg-3 col-sm-6 wow fadeInUp"
                 data-wow-delay="0.3s"
               >
-                <a className="cat-item rounded p-4" href="">
+                <Link className="cat-item rounded p-4" to={""}>
                   <i className="fa fa-3x fa-headset text-primary mb-4"></i>
                   <h6 className="mb-3">Customer Service</h6>
                   <p className="mb-0">123 Vacancy</p>
-                </a>
+                </Link>
               </div>
               <div
                 className="col-lg-3 col-sm-6 wow fadeInUp"
                 data-wow-delay="0.5s"
               >
-                <a className="cat-item rounded p-4" href="">
+                <Link className="cat-item rounded p-4" to={""}>
                   <i className="fa fa-3x fa-user-tie text-primary mb-4"></i>
                   <h6 className="mb-3">Human Resource</h6>
                   <p className="mb-0">123 Vacancy</p>
-                </a>
+                </Link>
               </div>
               <div
                 className="col-lg-3 col-sm-6 wow fadeInUp"
                 data-wow-delay="0.7s"
               >
-                <a className="cat-item rounded p-4" href="">
+                <Link className="cat-item rounded p-4" to={""}>
                   <i className="fa fa-3x fa-tasks text-primary mb-4"></i>
                   <h6 className="mb-3">Project Management</h6>
                   <p className="mb-0">123 Vacancy</p>
-                </a>
+                </Link>
               </div>
               <div
                 className="col-lg-3 col-sm-6 wow fadeInUp"
                 data-wow-delay="0.1s"
               >
-                <a className="cat-item rounded p-4" href="">
+                <Link className="cat-item rounded p-4" to={""}>
                   <i className="fa fa-3x fa-chart-line text-primary mb-4"></i>
                   <h6 className="mb-3">Business Development</h6>
                   <p className="mb-0">123 Vacancy</p>
-                </a>
+                </Link>
               </div>
               <div
                 className="col-lg-3 col-sm-6 wow fadeInUp"
                 data-wow-delay="0.3s"
               >
-                <a className="cat-item rounded p-4" href="">
+                <Link className="cat-item rounded p-4" to={""}>
                   <i className="fa fa-3x fa-hands-helping text-primary mb-4"></i>
                   <h6 className="mb-3">Sales & Communication</h6>
                   <p className="mb-0">123 Vacancy</p>
-                </a>
+                </Link>
               </div>
               <div
                 className="col-lg-3 col-sm-6 wow fadeInUp"
                 data-wow-delay="0.5s"
               >
-                <a className="cat-item rounded p-4" href="">
+                <Link className="cat-item rounded p-4" to={""}>
                   <i className="fa fa-3x fa-book-reader text-primary mb-4"></i>
                   <h6 className="mb-3">Teaching & Education</h6>
                   <p className="mb-0">123 Vacancy</p>
-                </a>
+                </Link>
               </div>
               <div
                 className="col-lg-3 col-sm-6 wow fadeInUp"
                 data-wow-delay="0.7s"
               >
-                <a className="cat-item rounded p-4" href="">
+                <Link className="cat-item rounded p-4" to="">
                   <i className="fa fa-3x fa-drafting-compass text-primary mb-4"></i>
                   <h6 className="mb-3">Design & Creative</h6>
                   <p className="mb-0">123 Vacancy</p>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -173,9 +175,9 @@ function Home() {
                 <p>
                   <i className="fa fa-check text-primary me-3"></i> Add Content
                 </p>
-                <a className="btn btn-primary py-3 px-5 mt-3" href="">
+                <Link className="btn btn-primary py-3 px-5 mt-3" to={""}>
                   Read More
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -194,31 +196,31 @@ function Home() {
             >
               <ul className="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
                 <li className="nav-item">
-                  <a
+                  <Link
                     className="d-flex align-items-center text-start mx-3 ms-0 pb-3 active"
                     data-bs-toggle="pill"
-                    href="#tab-1"
+                    to={"#tab-1"}
                   >
                     <h6 className="mt-n1 mb-0">Featured</h6>
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a
+                  <Link
                     className="d-flex align-items-center text-start mx-3 pb-3"
                     data-bs-toggle="pill"
-                    href="#tab-2"
+                    to={"#tab-2"}
                   >
                     <h6 className="mt-n1 mb-0">Full Time</h6>
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a
+                  <Link
                     className="d-flex align-items-center text-start mx-3 me-0 pb-3"
                     data-bs-toggle="pill"
-                    href="#tab-3"
+                    to={"#tab-3"}
                   >
                     <h6 className="mt-n1 mb-0">Part Time</h6>
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <div className="tab-content">
@@ -250,12 +252,15 @@ function Home() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="">
+                          </Link>
+                          <Link className="btn btn-primary" to={""}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -291,12 +296,15 @@ function Home() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="">
+                          </Link>
+                          <Link className="btn btn-primary" to={""}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -332,12 +340,15 @@ function Home() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="">
+                          </Link>
+                          <Link className="btn btn-primary" to={""}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -373,12 +384,15 @@ function Home() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="">
+                          </Link>
+                          <Link className="btn btn-primary" to={""}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -414,12 +428,15 @@ function Home() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="">
+                          </Link>
+                          <Link className="btn btn-primary" to={""}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -428,9 +445,9 @@ function Home() {
                       </div>
                     </div>
                   </div>
-                  <a className="btn btn-primary py-3 px-5" href="">
+                  <Link className="btn btn-primary py-3 px-5" to={""}>
                     Browse More Jobs
-                  </a>
+                  </Link>
                 </div>
                 <div id="tab-2" className="tab-pane fade show p-0">
                   <div className="job-item p-4 mb-4">
@@ -460,12 +477,15 @@ function Home() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="">
+                          </Link>
+                          <Link className="btn btn-primary" to={""}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -501,12 +521,15 @@ function Home() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="">
+                          </Link>
+                          <Link className="btn btn-primary" to={""}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -542,12 +565,15 @@ function Home() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="">
+                          </Link>
+                          <Link className="btn btn-primary" to={""}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -583,12 +609,15 @@ function Home() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="">
+                          </Link>
+                          <Link className="btn btn-primary" to={""}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -624,12 +653,15 @@ function Home() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="">
+                          </Link>
+                          <Link className="btn btn-primary" to={""}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -638,9 +670,9 @@ function Home() {
                       </div>
                     </div>
                   </div>
-                  <a className="btn btn-primary py-3 px-5" href="">
+                  <Link className="btn btn-primary py-3 px-5" to={""}>
                     Browse More Jobs
-                  </a>
+                  </Link>
                 </div>
                 <div id="tab-3" className="tab-pane fade show p-0">
                   <div className="job-item p-4 mb-4">
@@ -670,12 +702,15 @@ function Home() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="">
+                          </Link>
+                          <Link className="btn btn-primary" to={""}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -711,12 +746,15 @@ function Home() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="">
+                          </Link>
+                          <Link className="btn btn-primary" to={""}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -752,12 +790,15 @@ function Home() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="">
+                          </Link>
+                          <Link className="btn btn-primary" to={""}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -793,12 +834,15 @@ function Home() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="">
+                          </Link>
+                          <Link className="btn btn-primary" to={""}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -834,12 +878,15 @@ function Home() {
                       </div>
                       <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                         <div className="d-flex mb-3">
-                          <a className="btn btn-light btn-square me-3" href="">
+                          <Link
+                            className="btn btn-light btn-square me-3"
+                            to={""}
+                          >
                             <i className="far fa-heart text-primary"></i>
-                          </a>
-                          <a className="btn btn-primary" href="">
+                          </Link>
+                          <Link className="btn btn-primary" to={""}>
                             Apply Now
-                          </a>
+                          </Link>
                         </div>
                         <small className="text-truncate">
                           <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -848,9 +895,9 @@ function Home() {
                       </div>
                     </div>
                   </div>
-                  <a className="btn btn-primary py-3 px-5" href="">
+                  <Link className="btn btn-primary py-3 px-5" to={""}>
                     Browse More Jobs
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

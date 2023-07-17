@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function CompanyDetail() {
   return (
     <>
@@ -10,10 +12,10 @@ function CompanyDetail() {
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb text-uppercase">
                 <li className="breadcrumb-item">
-                  <a href="#">Home</a>
+                  <Link to={"/"}>Home</Link>
                 </li>
                 <li className="breadcrumb-item">
-                  <a href="company-list.html">Company List</a>
+                  <Link to={"CompanyList"}>Company List</Link>
                 </li>
                 <li
                   className="breadcrumb-item text-white active"
@@ -49,22 +51,22 @@ function CompanyDetail() {
 
                 <ul className="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
                   <li className="nav-item">
-                    <a
+                    <Link
                       className="d-flex align-items-center text-start mx-3 ms-0 pb-3 active"
                       data-bs-toggle="pill"
-                      href="#tab-1"
+                      to={"#tab-1"}
                     >
                       <h6 className="mt-n1 mb-0">Overview</h6>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a
+                    <Link
                       className="d-flex align-items-center text-start mx-3 pb-3"
                       data-bs-toggle="pill"
-                      href="#tab-2"
+                      to={"#tab-2"}
                     >
                       <h6 className="mt-n1 mb-0">Jobs</h6>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
 
@@ -219,15 +221,15 @@ function CompanyDetail() {
                         </div>
                         <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                           <div className="d-flex mb-3">
-                            <a
+                            <Link
                               className="btn btn-light btn-square me-3"
-                              href=""
+                              to={""}
                             >
                               <i className="far fa-heart text-primary"></i>
-                            </a>
-                            <a className="btn btn-primary" href="#apply">
+                            </Link>
+                            <Link className="btn btn-primary" to={"#apply"}>
                               Apply Now
-                            </a>
+                            </Link>
                           </div>
                           <small className="text-truncate">
                             <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -263,15 +265,15 @@ function CompanyDetail() {
                         </div>
                         <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                           <div className="d-flex mb-3">
-                            <a
+                            <Link
                               className="btn btn-light btn-square me-3"
-                              href=""
+                              to={""}
                             >
                               <i className="far fa-heart text-primary"></i>
-                            </a>
-                            <a className="btn btn-primary" href="#apply">
+                            </Link>
+                            <Link className="btn btn-primary" to={"#apply"}>
                               Apply Now
-                            </a>
+                            </Link>
                           </div>
                           <small className="text-truncate">
                             <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -307,15 +309,15 @@ function CompanyDetail() {
                         </div>
                         <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                           <div className="d-flex mb-3">
-                            <a
+                            <Link
                               className="btn btn-light btn-square me-3"
-                              href=""
+                              to={""}
                             >
                               <i className="far fa-heart text-primary"></i>
-                            </a>
-                            <a className="btn btn-primary" href="#apply">
+                            </Link>
+                            <Link className="btn btn-primary" to={"#apply"}>
                               Apply Now
-                            </a>
+                            </Link>
                           </div>
                           <small className="text-truncate">
                             <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -351,15 +353,15 @@ function CompanyDetail() {
                         </div>
                         <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                           <div className="d-flex mb-3">
-                            <a
+                            <Link
                               className="btn btn-light btn-square me-3"
-                              href=""
+                              to={""}
                             >
                               <i className="far fa-heart text-primary"></i>
-                            </a>
-                            <a className="btn btn-primary" href="#apply">
+                            </Link>
+                            <Link className="btn btn-primary" to={"#apply"}>
                               Apply Now
-                            </a>
+                            </Link>
                           </div>
                           <small className="text-truncate">
                             <i className="far fa-calendar-alt text-primary me-2"></i>
@@ -395,15 +397,15 @@ function CompanyDetail() {
                         </div>
                         <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                           <div className="d-flex mb-3">
-                            <a
+                            <Link
                               className="btn btn-light btn-square me-3"
-                              href=""
+                              to={""}
                             >
                               <i className="far fa-heart text-primary"></i>
-                            </a>
-                            <a className="btn btn-primary" href="#apply">
+                            </Link>
+                            <Link className="btn btn-primary" to={"#apply"}>
                               Apply Now
-                            </a>
+                            </Link>
                           </div>
                           <small className="text-truncate">
                             <i className="far fa-calendar-alt text-primary me-2"></i>

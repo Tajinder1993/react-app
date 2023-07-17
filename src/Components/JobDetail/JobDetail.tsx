@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function JobDetail() {
   return (
     <>
@@ -10,10 +12,10 @@ function JobDetail() {
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb text-uppercase">
                 <li className="breadcrumb-item">
-                  <a href="#">Home</a>
+                  <Link to={"/"}>Home</Link>
                 </li>
                 <li className="breadcrumb-item">
-                  <a href="job-list.html">Jobs List</a>
+                  <Link to={"/JobList"}>Jobs List</Link>
                 </li>
                 <li
                   className="breadcrumb-item text-white active"
@@ -25,7 +27,6 @@ function JobDetail() {
             </nav>
           </div>
         </div>
-        {/* Header End  */}
 
         {/* Job Detail Start  */}
         <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">

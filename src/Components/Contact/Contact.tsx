@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function contact() {
   return (
     <>
@@ -10,7 +12,7 @@ function contact() {
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb text-uppercase">
                 <li className="breadcrumb-item">
-                  <a href="#">Home</a>
+                  <Link to={"/"}>Home</Link>
                 </li>
 
                 <li

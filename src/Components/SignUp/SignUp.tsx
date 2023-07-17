@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 function SignUp() {
   return (
     <>
@@ -11,13 +12,13 @@ function SignUp() {
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb text-uppercase">
                 <li className="breadcrumb-item">
-                  <a href="index.html">Home</a>
+                  <Link to={"/"}>Home</Link>
                 </li>
                 <li className="breadcrumb-item">
-                  <a href="category.html">Job Category</a>
+                  <Link to={"/Category"}>Job Category</Link>
                 </li>
                 <li className="breadcrumb-item">
-                  <a href="job-list.html">Job List</a>
+                  <Link to={"JobList"}>Job List</Link>
                 </li>
                 <li
                   className="breadcrumb-item text-white active"
