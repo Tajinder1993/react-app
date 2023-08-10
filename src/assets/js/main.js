@@ -39,7 +39,7 @@
         return false;
     });
 
-
+console.log("header" ,  $(".header-carousel"));
     // Header carousel
     $(".header-carousel").owlCarousel({
         autoplay: true,

@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import Category from "./Components/Category/Category";
 import CompanyDetail from "./Components/CompanyDetail/CompanyDetail";
 import CompanyList from "./Components/CompanyList/CompanyList";
@@ -12,9 +13,10 @@ import Header from "./Components/Header/Header";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
+
   return (
     <Router>
-      <div>
+      <div className="container-xxl bg-white p-0">
         <Header />
         <Switch>
           <Route path={"/"} exact>
