@@ -39,7 +39,7 @@ function App() {
             <Contact />
           </Route>
 
-          <Route path={"/JobDetail"}>
+          <Route path={"/JobDetail/:jobId"}>
             <JobDetail />
           </Route>
 

@@ -1,5 +1,38 @@
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useHistory } from "react-router-dom";
+
 function Header() {
+
+  const history = useHistory();
+
+  const getLoggedInUser = () => {
+    let user: any;
+    if(localStorage.getItem('loggedInUser')) {
+      user = localStorage.getItem('loggedInUser');
+      user = JSON.parse(user);
+    }
+
+    if(user) {
+      setLoggedInUser(user);
+    }
+  }
+
+  const [loggedInUser, setLoggedInUser] = useState(null);
+
+  useEffect(() => {
+
+    getLoggedInUser();
+
+  }, [])
+
+  const logout  = () => {
+    if(loggedInUser) {
+      localStorage.removeItem('loggedInUser');
+      history.push('/Login');
+    }
+  }
+
+
   return (
     <>
       {/* Spinner Start  */}
@@ -51,13 +84,27 @@ function Header() {
               Contact
             </Link>
 
-            <Link to={"/Login"} className="nav-item nav-link">
-              Login
-            </Link>
+            {!loggedInUser &&
+            
+            <>
+              <Link to={"/Login"} className="nav-item nav-link">
+                Login
+              </Link>
 
-            <Link to={"/SignUp"} className="nav-item nav-link">
-              Sign Up
-            </Link>
+              <Link to={"/SignUp"} className="nav-item nav-link">
+                Sign Up
+              </Link>
+            </>
+
+            }
+
+            {loggedInUser &&
+              <button onClick={logout} className="nav-item nav-link"> Logout </button>
+            }
+
+          
+
+            
           </div>
         </div>
       </nav>

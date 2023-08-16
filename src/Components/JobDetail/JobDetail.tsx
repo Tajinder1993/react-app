@@ -1,6 +1,29 @@
-import { Link } from "react-router-dom";
+import { useEffect, useState } from 'react';
+import { Link, useParams } from 'react-router-dom'
+import { IJob } from '../Home/Home';
+import { getJobList } from '../../api-utils';
 
-function JobDetail() {
+
+function JobDetail(props: any) {
+
+  const { jobId } = useParams<any>();
+  
+  const [job, setJob] = useState<IJob>();
+
+  const getCurrentJobDetails = () => {
+    getJobList(jobId).then((res) => {
+      let job: IJob = res.data.jobList[0];
+      setJob(job);
+    })
+    .catch((err) => {
+      console.log(err);
+    })
+  }
+
+  useEffect(() => {
+    getCurrentJobDetails();
+  }, [])
+
   return (
     <>
       <div className="container-xxl py-5 bg-dark page-header mb-5">
@@ -40,37 +63,33 @@ function JobDetail() {
                   style={{ width: "80px", height: "80px" }}
                 />
                 <div className="text-start ps-4">
-                  <h3 className="mb-3">Marketing Manager</h3>
+                  <h3 className="mb-3">{job?.title}</h3>
                   <span className="text-truncate me-3">
                     <i className="fa fa-map-marker-alt text-primary me-2"></i>
-                    New York, USA
+                    {job?.location}
                   </span>
                   <span className="text-truncate me-3">
-                    <i className="far fa-clock text-primary me-2"></i>Full Time
+                    <i className="far fa-clock text-primary me-2"></i>{job?.type}
                   </span>
                   <span className="text-truncate me-0">
                     <i className="far fa-money-bill-alt text-primary me-2"></i>
-                    $123 - $456
+                    $ {job?.salary}
                   </span>
                 </div>
               </div>
 
               <div className="mb-5">
+                <h4 className="mb-3">Company</h4>
+                <p>
+                  {" "}
+                  {job?.company}
+                </p>
                 <h4 className="mb-3">Job description</h4>
                 <p>
                   {" "}
-                  Here at Rakuten Kobo Inc. we offer a casual working start-up
-                  environment and a group of friendly and talented individuals.
-                  Our employees rank us highly in terms of commitment to
-                  work/life balance. We realize that for our people to be
-                  innovative, creative and passionate they need to feel valued
-                  and supported. We believe in rewarding all our employees with
-                  competitive salaries, performance based annual bonuses, stock
-                  options and training opportunities. If you’re looking for a
-                  company that inspires passion, personal, and professional
-                  growth – join Kobo and come help us make reading lives better.
+                  {job?.jobDescription}
                 </p>
-                <h4 className="mb-3">Responsibility</h4>
+                {/* <h4 className="mb-3">Responsibility</h4>
                 <p>
                   {" "}
                   Rakuten Kobo Inc. is looking for a Gift Card Marketing Manager
@@ -83,8 +102,8 @@ function JobDetail() {
                   requires a unique strategy and hence solid experience in
                   marketing as well as partner relationships is crucial to
                   success.
-                </p>
-                <ul className="list-unstyled">
+                </p> */}
+                {/* <ul className="list-unstyled">
                   <li>
                     <i className="fa fa-angle-right text-primary me-2"></i>
                     Building marketing plans and goals to achieve company
@@ -116,37 +135,28 @@ function JobDetail() {
                     Evaluate gift card designs and make recommendations on
                     changes that are needed to attract new buyers of the product
                   </li>
-                </ul>
+                </ul> */}
                 <h4 className="mb-3">Skillsets Required</h4>
                 <p></p>
                 <ul className="list-unstyled">
-                  <li>
-                    <i className="fa fa-angle-right text-primary me-2"></i>
-                    5-10 years’ experience in the Gift Card Industry preferably
-                    worked at global scale gift card programs
-                  </li>
-                  <li>
-                    <i className="fa fa-angle-right text-primary me-2"></i>
-                    Critical thinker and sound decision maker that can also
-                    manage through crisis situations
-                  </li>
-                  <li>
-                    <i className="fa fa-angle-right text-primary me-2"></i>
-                    Able to multitask successfully across multiple (potentially
-                    competing) priorities in a dynamic, fast-paced culture
-                  </li>
-                  <li>
-                    <i className="fa fa-angle-right text-primary me-2"></i>
-                    Experience with 3RD party and eCommerce gift card
-                    sales(Vendors like BlackHawk, Incomm)
-                  </li>
+                  {job?.skillsRequired.map((skill, idx) => {
+                    return (
+                      <li key={idx}>
+                        <i className="fa fa-angle-right text-primary me-2"></i>
+                        {skill}
+                      </li>
+                    )
+                  })}
                 </ul>
               </div>
 
               {/* Form For applying Job  */}
               <div className="">
-                <h4 className="mb-4">Apply For The Job</h4>
-                <form>
+                <h4 className="mb-4">How to apply?</h4>
+                <p>Send your resume on below mentioned details:</p>
+                <p><strong>Name:</strong> {job?.contactPerson}</p>
+                <p><strong>Email:</strong> <span className='text-lowercase'>hr@{job?.company}.com</span></p>
+                {/* <form>
                   <div className="row g-3">
                     <div className="col-12 col-sm-6">
                       <input
@@ -185,7 +195,7 @@ function JobDetail() {
                       </button>
                     </div>
                   </div>
-                </form>
+                </form> */}
               </div>
             </div>
 
@@ -195,30 +205,30 @@ function JobDetail() {
                 className="bg-light rounded p-5 mb-4 wow slideInUp"
                 data-wow-delay="0.1s"
               >
-                <h4 className="mb-4">Job Summery</h4>
+                <h4 className="mb-4">Job Summary</h4>
                 <p>
                   <i className="fa fa-angle-right text-primary me-2"></i>
                   Published On: 01 Jan, 2023
                 </p>
                 <p>
                   <i className="fa fa-angle-right text-primary me-2"></i>
-                  Vacancy: 123 Position
-                </p>
-                <p>
-                  <i className="fa fa-angle-right text-primary me-2"></i>Job
-                  Nature: Full Time
+                  Applications Received: {job?.applicationsReceived}
                 </p>
                 <p>
                   <i className="fa fa-angle-right text-primary me-2"></i>
-                  Salary: $123 - $456
+                  Job Type: {job?.type}
                 </p>
                 <p>
                   <i className="fa fa-angle-right text-primary me-2"></i>
-                  Location: New York, USA
+                  Salary: {job?.salary}
+                </p>
+                <p>
+                  <i className="fa fa-angle-right text-primary me-2"></i>
+                  Location: {job?.location}
                 </p>
                 <p className="m-0">
-                  <i className="fa fa-angle-right text-primary me-2"></i>Date
-                  Line: 01 Jan, 2023
+                  <i className="fa fa-angle-right text-primary me-2"></i>
+                  Last Date To Apply: {job?.applicationDeadline}
                 </p>
               </div>
             </div>
